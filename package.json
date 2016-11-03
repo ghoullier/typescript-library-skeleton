@@ -1,0 +1,45 @@
+{
+  "name": "typescript-library-skeleton",
+  "version": "0.0.0",
+  "description": "Library description",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/rollup -c",
+    "changelog": "./node_modules/.bin/conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "start": "npm run tsc",
+    "pretest": "tsc -p test/tsconfig.json",
+    "test": "mocha --opts test/mocha.opts",
+    "tsc": "./node_modules/.bin/tsc --newLine LF --watch",
+    "watch-rollup": "./node_modules/.bin/rollup -c -w",
+    "watch": "nodemon --watch src -e ts --exec 'npm run build'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:ghoullier/typescript-library-skeleton.git"
+  },
+  "keywords": [
+    "library",
+    "typescript"
+  ],
+  "author": "Grégory Houllier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghoullier/typescript-library-skeleton/issues"
+  },
+  "homepage": "https://github.com/ghoullier/typescript-library-skeleton",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.46",
+    "@types/typescript": "0.4.29",
+    "chai": "^3.5.0",
+    "conventional-changelog-cli": "^1.2.0",
+    "mocha": "^3.1.2",
+    "nodemon": "^1.11.0",
+    "rollup": "^0.36.3",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-watch": "^2.5.0",
+    "typescript": "^2.0.6"
+  }
+}
