@@ -5,6 +5,7 @@ export default {
   entry: './src/index.ts',
   dest: 'dist/index.js',
   format: 'umd',
+  moduleName: 'Library',
   plugins: [
     plugin({ typescript })
   ]
