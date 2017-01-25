@@ -3,7 +3,7 @@
     "module": "umd",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es6",
+    "target": "es2017",
     "noImplicitAny": false,
     "outDir": "./dist",
     "rootDir": "./src",
